@@ -1,0 +1,92 @@
+Dia 1: 01/06/22
+1. Introducción a la programación en C++ (Día: 1)
+
+-Introducción al lenguaje de programación C++
+-Configuración del entorno de desarrollo C++
+-C frente a C++
+https://www.youtube.com/watch?v=tgphUKLJps4
+-C++ frente a JAVA
+https://www.youtube.com/watch?v=q_-mO8QJ4Ic
+-Primer programa en C++: Hola mundo
+https://www.youtube.com/watch?v=ld4nzao5XAc
+
+Dia 2: 02/06/2022
+2. Aprenda tipos de datos, variables y operadores (Día: 2-3)
+
+-Tipos de datos | Variables
+https://www.youtube.com/watch?v=xBOpQN8jR54
+-Operadores
+https://www.youtube.com/watch?v=onEilMRlR4E
+-Variable de referencia
+https://www.youtube.com/watch?v=Q6pFgoH0M6g
+-Sobrecarga del operador
+https://www.youtube.com/watch?v=TyjgvBkVj_k
+-Argumentos predeterminados
+https://www.youtube.com/watch?v=pqoqSTr5ZWw
+
+Dia 3 4/06/2022
+3. Aprenda declaraciones condicionales y de control (Día: 4-5)
+
+-Bucles
+for:
+https://www.youtube.com/watch?v=_6AdtcVn4xs&ab_channel=Programaci%C3%B3nATS
+while:
+https://www.youtube.com/watch?v=DTmMjJ-cd00&ab_channel=Programaci%C3%B3nATS
+do while:
+https://www.youtube.com/watch?v=vHKWMR2WaIQ&ab_channel=Programaci%C3%B3nATS
+
+-Toma de decisiones / condicionales
+if else:
+https://www.youtube.com/watch?v=r5GbMsB0eOA&ab_channel=Programaci%C3%B3nATS
+switch:
+https://www.youtube.com/watch?v=hjDB7ev9ePM&ab_channel=Programaci%C3%B3nATS
+
+-Sentencias de cambio
+	estructura de decision
+https://www.youtube.com/watch?v=xm75Rt9J6iM&list=LL&index=8
+Continuar sentencia | Declaración de ruptura
+
+-Ejecuta declaraciones if y else
+
+DIA 4: 18/06/2022
+4. Comprender matrices, cadenas y punteros (Día: 6-8)
+-Matrices | Instrumentos de cuerda
+https://www.youtube.com/watch?v=7LMAZimcgZ8
+https://www.youtube.com/watch?v=yVL1gViXq6w
+https://www.youtube.com/watch?v=qDBZ0S3hcbY
+https://www.youtube.com/watch?v=s-ldXjkvats
+https://www.youtube.com/watch?v=SMrsNBsZwk0
+-Punteros
+https://www.youtube.com/watch?v=_pcfFMFs9-g
+https://www.youtube.com/watch?v=MLv3nMAxLx8
+https://www.youtube.com/watch?v=qtQZ1Ev1wOw
+https://www.youtube.com/watch?v=hkyAyaB7tzI&t=71s
+https://www.youtube.com/watch?v=m6MEbGjXIzA
+https://www.youtube.com/watch?v=l_d-jZYLvx8
+https://www.youtube.com/watch?v=h85a5WoJZbE
+Punteros vs Referencia
+https://www.youtube.com/watch?v=WR7C5szaGf8
+
+` Espacios de nombres
+` Punteros salvajes
+
+5. Revisar conceptos de funciones y OOP (Día: 9-12)
+` Funciones
+` Sobrecarga de funciones
+` Clases y objetos
+` Programación orientada a objetos
+` Constructores
+
+6. Aprenda flujos de E/S, memoria dinámica y STL (Día: 13-16)
+` Archivos y flujos
+` Asignación dinámica de memoria
+` malloc() frente a nuevo
+` Plantillas
+` Biblioteca de plantillas estándar de C++ (STL)
+
+7. Comprender el manejo de excepciones, manejo de señales y subprocesos múltiples (Día: 17-20)
+` Manejo de excepciones
+` Gestión de señales
+` Desenrollado de pila
+` Multihilo
+` Subprocesos POSIX
