@@ -1,0 +1,125 @@
+/* Reseteo de márgenes y rellenos en todos los elementos y pseudo-elementos */
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Establecer la altura del HTML y el cuerpo al 100% para que ocupen todo el espacio de la ventana */
+html, body {
+	height: 100%;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #1E3D1D;
+	color: #fff;
+}
+
+/* Estilos para las secciones de la página */
+section {
+	padding-block: 50px;
+}
+
+/* Estilos para la tabla principal */
+.table {
+	max-width: 960px;
+	margin: auto;
+	padding-inline: 16px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
+
+/* Estilos para cada elemento de la tabla */
+.table-item {
+	display: flex;
+	justify-content: center; /* Centrado horizontal */
+	align-items: center; /* Centrado vertical */
+	margin-top: 10vh;
+	display: flex; /* Esto se repite y parece redundante */
+	flex-direction: column;
+	row-gap: 5px;
+	text-align: center;
+	color: #727586;
+	background-color: #fff;
+	padding: 25px 20px;
+}
+
+/* Estilos para el segundo elemento de la tabla */
+.table-item:nth-child(2) {
+	border-right: 1px solid rgba(114, 117, 134, .25);
+	border-left: 1px solid rgba(114, 117, 134, .25);
+}
+
+/* Estilos para el título de la tabla */
+.table-title {
+	font-size: 1.5rem;
+	color: #151515;
+}
+
+/* Estilos para la información del plan en la tabla */
+.table-plan {
+	font-weight: 500;
+}
+
+/* Estilos para la moneda del plan en la tabla */
+.table-plan-currency {
+	font-size: 1.25rem;
+}
+
+/* Estilos para el precio del plan en la tabla */
+.table-plan-price {
+	font-size: 3rem;
+	font-weight: 800;
+	color: #151515;
+}
+
+/* Estilos para la lista en la tabla */
+.table-list {
+	list-style: none;
+	font-size: 0.875rem;
+	padding: 0 10px 20px;
+}
+
+/* Estilos para el botón en la tabla */
+.table-button {
+	font: inherit;
+	font-weight: 600;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin: auto auto 0;
+	border-radius: 8px;
+	background: #6FE36D;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
+
+/* Estilos para el botón cuando se pasa el cursor sobre él o está enfocado */
+.table-button:hover, .table-button:focus {
+	background-color: #7BFC79;
+}
+
+/* Estilos para la tabla en pantallas más pequeñas */
+@media screen and (max-width: 53.5em) {
+	/* Establecer un borde inferior en el primer elemento de la tabla */
+	.table-item:nth-child(1) {
+		border-bottom: 1px solid rgba(114, 117, 134, .25);
+	}
+	/* Eliminar el borde derecho en el segundo elemento de la tabla */
+	.table-item:nth-child(2) {
+		border-right: none;
+	}
+}
+
+/* Estilos para la tabla en pantallas aún más pequeñas */
+@media screen and (max-width: 36.5em) {
+	/* Establecer bordes superior e inferior en el segundo elemento de la tabla */
+	.table-item:nth-child(2) {
+		border: none;
+		border-top: 1px solid rgba(114, 117, 134, .25);
+		border-bottom: 1px solid rgba(114, 117, 134, .25);
+	}
+}
