@@ -1,0 +1,157 @@
+/* ======================== */
+/* 
+    Ignora los siguientes estilos. No son importantes para lograr el efecto.
+    Los estoy utilizando solo para la apariencia (estilos generales de fondo de página / fuentes / centrado de contenido).
+*/
+
+/* Establece el modelo de caja para todos los elementos, lo que garantiza que los márgenes y rellenos se calculen correctamente. */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Establece el tamaño de fuente predeterminado para el elemento HTML en 62.5% para facilitar los cálculos de rem (1rem = 10px). */
+html {
+	font-size: 62.5%;
+}
+
+/* Establece la altura del elemento HTML y del cuerpo de la página al 100% de la altura de la ventana. */
+html,
+body {
+	height: 100%;
+}
+
+/* Estilos generales para el cuerpo de la página, incluyendo la fuente, tamaño de fuente, color de texto, fondo y centrado de contenido. */
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6rem;
+	color: #fff;
+	background-color: #000;
+	display: grid;
+	place-items: center;
+}
+
+/* ======================== */
+/* Estilos específicos para el contenedor principal. */
+.container {
+	max-width: 96rem;
+	margin-inline: auto;
+	padding-inline: 1.6rem;
+}
+
+/* ======================== */
+/* Estilos para la tarjeta. */
+.card {
+	background-color: #fff;
+	color: #333;
+	box-shadow: 2px 0.8rem 1rem rgba(0, 0, 0, 0.025);
+}
+
+/* Estilos para la sección de publicación de la tarjeta. */
+.card-publication {
+	position: relative;
+	height: 20rem;
+	overflow: hidden;
+}
+
+/* Estilos para la imagen dentro de la sección de publicación de la tarjeta. */
+.card-publication img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s;
+}
+
+/* Al pasar el cursor sobre la tarjeta, la imagen se agranda. */
+.card:hover .card-publication img {
+	transform: scale(1.5);
+}
+
+/* Estilos para la capa de superposición de la sección de publicación de la tarjeta. */
+.card-publication > div {
+	background: linear-gradient(
+		to right bottom,
+		rgba(48, 110, 255, 0.8),
+		rgba(204, 0, 255, 0.8)
+	);
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	inset: 0;
+	padding: 1rem;
+}
+
+/* Estilos para los íconos dentro de la tarjeta. */
+.card-icon {
+	margin-right: 1rem;
+}
+
+/* Estilos para los elementos de texto dentro de la sección de publicación de la tarjeta. */
+.card-publication span {
+	display: block;
+}
+
+/* Estilos para el nombre del autor. */
+.card-author {
+	margin-bottom: 0.5rem;
+}
+
+/* Estilos para la sección de información de la tarjeta. */
+.card-info {
+	position: relative;
+	padding: 2rem 3rem;
+}
+
+/* Estilos para el título de la tarjeta. */
+.card-title {
+	font-size: 3rem;
+}
+
+/* Estilos para el subtítulo de la tarjeta. */
+.card-subtitle {
+	display: inline-block;
+	font-size: 1.4rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #a2a2a2;
+	margin-bottom: 1rem;
+}
+
+/* Estilos para el enlace "Leer más" en la tarjeta. */
+.card-cta {
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #2e6dff;
+	margin-top: 2rem;
+}
+
+/* Al pasar el cursor sobre el enlace "Leer más", el texto se desplaza hacia la derecha. */
+.card-cta span {
+	display: inherit;
+	transition: transform 0.5s;
+}
+
+.card-cta:hover span {
+	transform: translateX(0.5rem);
+}
+
+/* Estilos para dispositivos con un ancho mínimo de 37.5em (600px). */
+@media screen and (min-width: 37.5em) {
+	/* Cambios en la disposición de la tarjeta y su sección de publicación. */
+	.card {
+		display: grid;
+		grid-auto-flow: column;
+		max-width: 75rem;
+	}
+	.card-publication {
+		width: 25rem;
+		height: initial;
+	}
+}
