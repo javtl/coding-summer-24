@@ -1,0 +1,127 @@
+/* ========================
+   Estilos generales
+======================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* Reinicio de estilos */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Estilos de la página */
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #2b2b2d;
+	display: grid;
+	place-content: center;
+}
+
+/* ========================
+   Estilos de la tarjeta de producto
+======================== */
+.product-card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+	width: 280px;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	overflow-y: hidden;
+}
+
+/* Imagen del producto */
+.product-card-image {
+	display: block;
+	max-width: 100%;
+	animation: fadeIn 0.25s;
+}
+
+/* Información del producto */
+.product-card-caption {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: #2b2b2d;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+	padding: 20px;
+	border-radius: inherit;
+	animation: fadeIn 0.5s;
+}
+
+/* Título del producto */
+.product-card-title {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/* Subtítulo del producto */
+.product-card-subtitle {
+	color: #d8d7e3;
+}
+
+/* Pie de la tarjeta de producto */
+.product-card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Precio del producto */
+.product-card-price {
+	font-weight: 600;
+}
+
+/* Botón de acción */
+.product-card-button {
+	display: grid;
+	place-items: center;
+	width: 30px;
+	height: 30px;
+	background-color: #03d7c9;
+	color: #fff;
+	outline: none;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.25s;
+}
+
+/* Efecto hover/focus del botón */
+.product-card-button:hover,
+.product-card__button:focus {
+	background-color: #01bdb0;
+}
+
+/* Icono del botón */
+.product-card-icon {
+	font-size: 18px;
+	transition: transform 0.25s;
+}
+
+/* Rotación del icono en hover/focus */
+.product-card-button:hover .product-card-icon,
+.product-card-button:focus .product-card-icon {
+	transform: rotate(1turn);
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
