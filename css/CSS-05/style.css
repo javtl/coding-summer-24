@@ -1,0 +1,24 @@
+body{
+
+    background-color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+    
+}
+
+header{
+    background-color: aquamarine;
+    height: 100px;
+    width: 100%;
+    color: aliceblue;
+    margin: 0px;
+    text-align: center;
+    line-height: 100px;
+    border-bottom: 3px solid black;
+}
+
+nav{background-color: blueviolet;
+height: 50px;
+}
+
