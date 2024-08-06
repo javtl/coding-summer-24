@@ -1,0 +1,79 @@
+/* Estilos para el encabezado */
+header {
+    background-color: #1a1d24; /* Color de fondo del encabezado */
+}
+
+/* Estilos para la página principal */
+.page {
+    background-color: #2b2b2b; /* Color de fondo de la página */
+    min-width: 100%;
+    min-height: 100vh; /* Altura mínima para ocupar toda la página verticalmente */
+    margin: 0; /* Elimina el margen alrededor del elemento */
+    padding: 0; /* Elimina el relleno dentro del elemento */
+    box-sizing: border-box; /* Incluye el tamaño del relleno y el borde en el cálculo del tamaño total */
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+.navbar-container {
+    background-color: #131313; /* Color de fondo del contenedor de la barra de navegación */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para la lista de navegación */
+.nav-list {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.nav-item {
+    min-width: 10rem;
+    text-align: center;
+    padding-block: 1rem;
+}
+
+/* Estilos para el enlace del logo */
+.nav-link-logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #98989c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para los enlaces de la lista de navegación */
+.nav-link {
+    text-decoration: none;
+    color: #98989c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos para la barra activa */
+.active {
+    position: absolute;
+    bottom: -1rem;
+    height: 2px;
+    width: 10rem;
+    background-color: #1561f0; /* Color de la barra activa */
+    transition: transform 0.25s; /* Animación de transformación */
+}
+
+/* Estilos para la barra activa al hacer hover en el segundo elemento */
+.nav-item:nth-child(2):hover ~ .active {
+    transform: translateX(10rem);
+}
+
+/* Estilos para la barra activa al hacer hover en el tercer elemento */
+.nav-item:nth-child(3):hover ~ .active {
+    transform: translateX(20rem);
+}
+
+/* Estilos para la barra activa al hacer hover en el cuarto elemento */
+.nav-item:nth-child(4):hover ~ .active {
+    transform: translateX(30rem);
+}
