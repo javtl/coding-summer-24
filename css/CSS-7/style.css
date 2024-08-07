@@ -1,0 +1,41 @@
+/*
+. - clases
+# -id
+
+*/
+header{
+    font-weight: bold;
+    background-color: navy;
+    color: aliceblue;
+}
+h1{
+    background-color: bisque;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+    background-color: beige;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+article{
+
+    background-color: azure;
+}
+
+nav{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+.agrup {
+    border: 1px solid black
+}
+
+/*HACER UNA SELECCION ENETERA: poner una coma
+header, nav, aside, footer{border: 1px solid black}*/
+
+
