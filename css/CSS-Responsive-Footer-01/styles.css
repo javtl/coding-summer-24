@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    padding-bottom: 16px;
+}
+i{
+    font-size: 24px;
+}
+/*========================================================================================*/
+
+.footer{
+    padding-block: 50px;
+    padding-bottom: 25px;
+    background-color: #151515;
+    color:#666873;
+
+    margin-top: auto; /* Margin-top: auto; for demo use only */
+}
+.footer-container{
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    row-gap: 20px;
+}
+.footer-title{
+    margin-left: -3px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.footer-list-link{
+    transition: color 0.25s;
+}
+
+.footer-list-link:hover{
+    color: #fff;
+}
+
+.footer-divider{
+    margin-block:25px;
+    border: none;
+    border-top: 1px solid rgba(252,255,255,0.1);
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.footer-list--bottom{
+    flex-direction: row;
+}
