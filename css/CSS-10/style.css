@@ -1,0 +1,57 @@
+
+.web-header{
+    background-color: navy;
+    text-align: left;
+    color: aliceblue;
+    border: 1px solid black;
+}
+.divnav{
+
+    background-color: gray;
+}
+
+
+
+.menu li {
+    list-style-type: none;
+    background-color: aqua;
+    color: aliceblue;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: left;
+    padding: 5px;
+}
+
+.divmain{
+    background-color: gray;
+    text-align: left;
+   
+
+}
+.article1{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.article2{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+.article3{
+    background-color: aquamarine;
+    border: 1px solid black;
+    
+}
+
+.footer{background-color: navy;
+color: aliceblue;
+text-align: center;
+border: 1px solid black;
+
+}
+
+.column{
+    background-color: aqua;
+    text-align:left;
+    border:  1px solid black;
+    float: right;
+}
