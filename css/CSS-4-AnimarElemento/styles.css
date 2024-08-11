@@ -1,0 +1,71 @@
+/* Estilos para el cuerpo del documento */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilos para los íconos Material Icons */
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px; /* Tamaño preferido para el ícono */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Mejora de suavidad para navegadores WebKit */
+    -webkit-font-smoothing: antialiased;
+    /* Mejora de legibilidad para Safari y Chrome */
+    text-rendering: optimizeLegibility;
+    /* Mejora de suavidad para Firefox en macOS */
+    -moz-osx-font-smoothing: grayscale;
+    /* Activación de características tipográficas en IE */
+    font-feature-settings: "liga";
+  }
+  
+  /* Estilos para la notificación */
+  .notification {
+    width: 48px;
+    margin: 0 auto;
+  
+    /* Animación "ring" con duración de 4 segundos, retraso de 0.7 segundos, aceleración y repetición infinita */
+    animation: ring 4s 0.7s ease-in-out infinite;
+    transform-origin: 50% 4px;
+  }
+  
+  /* Estilos para el contador dentro de la notificación */
+  .notification .count {
+    --size: 30px;
+  
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    border: solid 2px white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    max-width: var(--size);
+    max-height: var(--size);
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: white;
+    position: relative;
+    top: 20px;
+    left: -5px;
+  }
+  
+  /* Definición de la animación "ring" */
+  @keyframes ring {
+    0% { transform: rotate(0); }
+    /* ... (siguentes pasos de la animación) ... */
+    100% { transform: rotate(0); }
+  }
+  
