@@ -1,0 +1,124 @@
+/* Estilos básicos para el cuerpo de la página */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: black;
+    color: white;
+    width: 100%;
+  }
+  
+  /* Elementos de navegación en versión móvil */
+  nav .mobile {
+    display: none; /* No se muestra en pantalla grande */
+  }
+  
+  /* Estilos para el logo en la barra de navegación */
+  nav .logo {
+    min-width: 250px;
+  }
+  
+  /* Estilos para los enlaces de navegación */
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+  }
+  
+  /* Estilos para los enlaces de navegación al pasar el mouse */
+  nav a:hover {
+    color: black;
+    background-color: rgb(0, 255, 200);
+  }
+  
+  /* Estilos para la barra de navegación en versión de escritorio */
+  nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  /* Estilos para los elementos de navegación primarios y secundarios en versión de escritorio */
+  nav .desktop .primary,
+  nav .desktop .secondary {
+    display: flex;
+  }
+  
+  /* Elementos secundarios de navegación en versión completa */
+  nav .secondary.full {
+    /* Puedes agregar estilos aquí si es necesario */
+  }
+  
+  /* Elementos secundarios de navegación en versión miniatura */
+  nav .secondary.mini {
+    display: none;
+  }
+  
+  /* Estilos para media query en pantallas medianas */
+  @media screen and (max-width: 894px) {
+    nav .logo {
+      min-width: 100px;
+    }
+  
+    nav .secondary.full {
+      display: none;
+    }
+  
+    nav .secondary.mini {
+      display: block;
+    }
+  
+    /* Submenú en versión miniatura */
+    nav .secondary.mini .submenu {
+      position: absolute;
+      display: none;
+    }
+  }
+  
+  /* Estilos para media query en pantallas pequeñas */
+  @media screen and (max-width: 516px) {
+    nav .desktop {
+      display: none;
+    }
+  
+    nav .mobile {
+      display: block;
+    }
+  
+    /* Encabezado en versión móvil */
+    nav .mobile .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    /* Estilos para el logo en versión móvil */
+    nav .mobile .header .logo {
+      flex: 1;
+      text-align: center;
+    }
+  
+    /* Estilos para el botón "Más" en versión móvil */
+    nav .mobile .header .more button {
+      padding: 20px;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+  
+    /* Estilos para el botón "Más" al pasar el mouse en versión móvil */
+    nav .mobile .header .more button:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+  

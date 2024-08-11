@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Configuración del documento -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu responsivo</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <!-- Versión móvil del menú -->
+      <div class="mobile">
+        <!-- Encabezado del menú móvil -->
+        <div class="header">
+          <div class="logo">Logo</div>
+          <div class="more"><button>More</button></div>
+        </div>
+        <!-- Enlaces en el menú móvil -->
+        <div class="links">
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Search</a>
+          <a href="#">Sign up</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+      <!-- Versión de escritorio del menú -->
+      <div class="desktop">
+        <!-- Logo en la versión de escritorio -->
+        <div class="logo">Logo</div>
+        <!-- Enlaces principales en el menú de escritorio -->
+        <div class="primary">
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <!-- Enlaces secundarios en el menú de escritorio (tamaño completo) -->
+        <div class="secondary full">
+          <a href="#">Search</a>
+          <a href="#">Sign up</a>
+          <a href="#">Login</a>
+        </div>
+        <!-- Enlaces secundarios en el menú de escritorio (tamaño mini) -->
+        <div class="secondary mini">
+          <a href="#">More</a>
+          <!-- Submenú desplegable en el menú de escritorio (tamaño mini) -->
+          <div class="submenu">
+            <a href="#">Sign up</a>
+            <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
