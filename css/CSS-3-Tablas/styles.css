@@ -1,0 +1,46 @@
+/* Estilos globales para el documento */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos para la tabla principal */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 800px;
+    margin: 100px auto;
+}
+
+/* Estilos para celdas de datos y encabezados */
+td, th {
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+/* Estilos para filas pares */
+tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+/* Alineación de celdas de la tercera y cuarta columna */
+td:nth-child(3),
+th:nth-child(3),
+td:nth-child(4),
+th:nth-child(4) {
+    text-align: right;
+}
+
+/* Estilos para filas al pasar el cursor */
+tbody tr:hover {
+    background-color: lightblue !important;
+}
+
+/* Estilos para el encabezado de la tabla */
+thead {
+    background-color: black;
+    color: azure;
+    position: sticky;
+    top: 0;
+}
