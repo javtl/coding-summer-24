@@ -1,0 +1,142 @@
+/* Estilos globales */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+/* Estilos para iconos de Material */
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 48px;
+  /* Otros estilos relacionados con la presentación de iconos */
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Contenedor del formulario de inicio de sesión */
+.form-container .login-container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-container .login-container > h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.form-container .login-container > p,
+.form-container .login-container span {
+  color: #555;
+  text-align: center;
+}
+
+.form-container .login-container label {
+  display: block;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.form-container .login-container input {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.form-container .login-container input.input:focus {
+  outline: solid 1px rgb(0, 153, 255);
+}
+
+.form-container .login-container .options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-container a {
+  color: #0099ff;
+  text-decoration: none; /* Cambiado a "none" para eliminar el subrayado por defecto */
+}
+
+.form-container a:hover {
+  text-decoration: underline; /* Se agrega subrayado al pasar el cursor */
+}
+.btn{
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  border: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn.btn-login{
+  background-color: black;
+  color: white;
+}
+
+.form-container .login-container .providers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-container .login-container button.btn,
+.form-container .login-container input.btn {
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: bolder;
+  display: block;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* ... (resto del código) ... */
+
+/* Estilos responsivos */
+@media screen and (max-width: 1357px) {
+  .form-container {
+    width: 95%;
+  }
+  .form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .form-container .welcome-screen-container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form-container .login-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .form-container .welcome-screen-container {
+    width: 0%;
+  }
+}
