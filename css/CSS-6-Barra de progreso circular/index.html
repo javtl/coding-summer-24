@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barra de progreso</title>
+  <link rel="stylesheet" href="styles.css" /> <!-- Enlazar archivo de estilos externo -->
+</head>
+<body>
+  <div class="progressbar-container"> <!-- Contenedor de la barra de progreso -->
+    <div class="outer-box"> <!-- Caja exterior que rodea la barra -->
+      <div class="inner-box">100%</div> <!-- Caja interior con el texto del progreso -->
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px"> <!-- SVG para el círculo de la barra de progreso -->
+        <defs>
+          <linearGradient id="GradientColor"> <!-- Definir un gradiente de color -->
+            <stop offset="0%" stop-color="#e91e63" /> <!-- Color de inicio del gradiente -->
+            <stop offset="100%" stop-color="#673ab7" /> <!-- Color de finalización del gradiente -->
+          </linearGradient>
+        </defs>
+        <circle cx="100" cy="100" r="80" stroke-linecap="round" /> <!-- Círculo de la barra de progreso -->
+      </svg>
+    </div>
+  </div>
+</body>
+</html>

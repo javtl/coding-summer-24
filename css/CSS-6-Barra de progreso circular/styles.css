@@ -1,0 +1,58 @@
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
+  background-color: #4b0081; /* Color de fondo */
+}
+
+/* Estilos para el contenedor de la barra de progreso */
+.progressbar-container {
+  width: 200px; /* Ancho del contenedor */
+  height: 200px; /* Altura del contenedor */
+  margin: 100px auto; /* Margen para centrar horizontalmente */
+}
+
+/* Estilos para la caja exterior del indicador de progreso */
+.progressbar-container .outer-box {
+  background-color: white; /* Color de fondo */
+  width: 200px; /* Ancho de la caja exterior */
+  height: 200px; /* Altura de la caja exterior */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  display: flex; /* Mostrar contenido en línea */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos para la caja interior del indicador de progreso */
+.progressbar-container .inner-box {
+  background-color: white; /* Color de fondo */
+  font-size: 24px; /* Tamaño de fuente */
+  width: 160px; /* Ancho de la caja interior */
+  height: 160px; /* Altura de la caja interior */
+  border-radius: 50%; /* Borde redondeado para formar un círculo */
+  display: flex; /* Mostrar contenido en línea */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+/* Estilos para los elementos SVG en el documento */
+svg {
+  position: absolute; /* Posición absoluta */
+}
+
+/* Estilos para los elementos de tipo círculo dentro de SVG */
+circle {
+  fill: none; /* No rellenar el círculo */
+  stroke: url(#GradientColor); /* Color del trazo (usando un gradiente definido en el documento SVG) */
+  stroke-width: 20px; /* Ancho del trazo */
+  stroke-dasharray: 472; /* Longitud de la línea de trazo */
+  stroke-dashoffset: 472; /* Desplazamiento del trazo */
+  
+  animation: loading 2s linear forwards; /* Animación aplicada para mostrar la carga */
+}
+
+/* Definición de la animación "loading" */
+@keyframes loading {
+  100% {
+    stroke-dashoffset: 0; /* Valor final del desplazamiento del trazo, completando la animación */
+  }
+}
