@@ -1,0 +1,55 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px;
+    margin: 0;
+}
+
+/* Estilos para el contenedor de los checkboxes */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+}
+
+/* Estilos para ocultar el input checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Estilos para el icono de checkmark */
+.checkbox-container .checkmark {
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: grey;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para el icono dentro del checkmark */
+.checkbox-container .checkmark .material-icons {
+    color: white;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cambiar el color del checkmark cuando esté seleccionado */
+.checkbox-container input:checked ~ .checkmark {
+    background-color: green;
+}
+
+/* Mostrar el icono cuando el checkbox esté seleccionado */
+.checkbox-container input:checked ~ .checkmark .material-icons {
+    transform: scale(1);
+}
