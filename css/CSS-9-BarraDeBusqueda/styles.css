@@ -1,0 +1,83 @@
+/* Estilos para el cuerpo del documento */
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para los íconos de Material Icons */
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Tamaño de ícono preferido */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Optimización de renderizado para navegadores WebKit */
+    -webkit-font-smoothing: antialiased;
+    /* Optimización de renderizado para Safari y Chrome */
+    text-rendering: optimizeLegibility;
+  
+    /* Optimización de renderizado para Firefox */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Optimización de renderizado para IE */
+    font-feature-settings: "liga";
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    border: solid 1px #ccc;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+    width: 700px;
+    margin: 100px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilos para la barra de búsqueda al tener foco */
+.search-bar:focus-within {
+    border: solid 1px #aaa;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Estilos para el input de tipo texto dentro de la barra de búsqueda */
+.search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+}
+
+/* Estilos para las acciones (botones) dentro de la barra de búsqueda */
+.search-bar .actions {
+    display: flex;
+    gap: 5px;
+}
+
+/* Estilos para los botones de acciones al pasar el cursor por encima */
+.search-bar .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+
+    transition: color 0.3s ease-in-out;
+}
+
+/* Cambio de color al pasar el cursor por encima de los botones de acciones */
+.search-bar .actions button:hover {
+    color: #2979e2;
+}
