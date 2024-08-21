@@ -1,0 +1,121 @@
+/* Definición de colores personalizados */ /* https://usbrandcolors.com/twitter-colors/ */
+:root {
+    --border-color: #1DA1F2; /* Azul vibrante de Twitter */
+    --text-color: #14171A; /* Texto principal en Twitter */
+    --link-color: #1DA1F2; /* Color de enlaces en Twitter */
+    --accent-color: #AAB8C2; /* Color de acento en Twitter */
+    --accent-color-link: #1DA1F2; /* Color de acento en Twitter */
+    --background-color: #F5F8FA; /* Fondo principal de Twitter */
+}
+
+
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* Contenedor principal de los comentarios */
+.comments-container {
+    width: 800px;
+    margin: 100px auto;
+}
+
+/* Estilos para cada comentario */
+.comments-container > .comment {
+    margin-bottom: 10px;
+}
+
+.comments-container .comment {
+    display: flex;
+}
+
+/* Línea lateral decorativa del comentario */
+.comments-container .comment .line {
+    position: relative;
+    width: 10px;
+    height: 50%;
+    border-left: solid 1px var(--border-color);
+    border-bottom: solid 1px var(--border-color);
+    border-radius: 0 0 0 8px;
+}
+
+/* Contenedor del comentario */
+.comments-container .comment .comment-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenido del comentario */
+.comments-container .comment .comment-wrapper .content {
+    width: 100%;
+    display: flex;
+    border: solid 1px var(--border-color);
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+}
+
+/* Imagen de perfil del usuario */
+.comments-container .comment .comment-wrapper .content img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+}
+
+/* Información del comentario */
+.comments-container .comment .comment-wrapper .content .comment-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .username {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .header .date {
+    color: var(--accent-color);
+}
+
+/* Acciones del comentario */
+.comments-container .comment .comment-wrapper .content .comment-info .actions {
+    display: flex;
+    gap: 5px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions button {
+    border: none;
+    background-color: transparent;
+    color: var(--accent-color-link);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.comments-container .comment .comment-wrapper .content .comment-info .actions button:hover {
+    color: white;
+    background-color: var(--accent-color-link);
+}
+
+/* Respuestas a comentarios */
+.comments-container .comment .replies {
+    padding-top: 10px;
+    position: relative;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comments-container .comment .replies::before {
+    content: "";
+    position: absolute;
+    background-color: var(--border-color);
+    width: 1px;
+    top: 0;
+    height: calc(100% - 53px);
+}
