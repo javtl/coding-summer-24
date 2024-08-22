@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+  
+  .user-container {
+    margin: 10% auto;
+    text-align: center;
+  }
+  
+  .user-container .user {
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  
+  .user-container .user img {
+    width: 200px; /* Tamaño de imagen más pequeño */
+    height: 200px; /* Tamaño de imagen más pequeño */
+    display: block;
+    margin: 0 auto; /* Alineación horizontal en el centro */
+    border: solid 2px white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .user-container .user .name {
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+  }
+  
+  .user-container .user .name .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .user-container .user .name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-top: solid 10px black;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+  }
+  
+  .user-container .user:hover .name {
+    display: block;
+  }
+  
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .user-container {
+      margin: 20% auto;
+    }
+  }
+  /* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+  
+  /* Estilos para el contenedor de usuarios */
+  .user-container {
+    margin: 10% auto;
+    text-align: center;
+  }
+  
+  /* Estilos para cada usuario en el contenedor */
+  .user-container .user {
+    margin-bottom: 20px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Estilos para la imagen del usuario */
+  .user-container .user img {
+    width: 200px; /* Tamaño de imagen más pequeño */
+    height: 200px; /* Tamaño de imagen más pequeño */
+    display: block;
+    margin: 0 auto; /* Alineación horizontal en el centro */
+    border: solid 2px white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Estilos para el nombre del usuario */
+  .user-container .user .name {
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    display: none;
+    min-width: 100px;
+    width: 150px;
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 15px;
+  }
+  
+  /* Estilos para el texto del nombre del usuario */
+  .user-container .user .name .text {
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Triángulo debajo del nombre del usuario */
+  .user-container .user .name::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-top: solid 10px black;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+  }
+  
+  /* Mostrar el nombre del usuario al pasar el cursor */
+  .user-container .user:hover .name {
+    display: block;
+  }
+  
+  /* Media Query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .user-container {
+      margin: 20% auto;
+    }
+  }
+  
