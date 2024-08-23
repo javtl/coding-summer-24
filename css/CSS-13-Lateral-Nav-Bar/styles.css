@@ -1,0 +1,93 @@
+/* Establece la fuente predeterminada y estilos básicos para el cuerpo del documento */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    color: whitesmoke;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background: black;
+    overflow: hidden;
+    transition: width 0.3s;
+    color: whitesmoke;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: whitesmoke;
+    text-decoration: none; /* Evita subrayados en enlaces */
+}
+
+/* Cambios en la barra de navegación al pasar el mouse por encima */
+nav:hover {
+    width: 300px;
+}
+
+/* Barra superior de la navegación */
+nav .bar {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end; /* Cambia "end" a "flex-end" para coherencia */
+    align-items: center; /* Añade alineación vertical */
+    padding: 10px;
+}
+
+/* Información del usuario */
+nav .user {
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    height: 180px;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Muestra la información del usuario al pasar el mouse por encima */
+nav:hover .user {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Estilos para la imagen del usuario */
+nav .user img {
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* Estilos para los enlaces de navegación */
+nav .links {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilos para los enlaces dentro de .links */
+nav .links a {
+    font-weight: bold;
+}
+
+/* Cambio de color en el enlace al pasar el mouse por encima */
+nav .links a:hover {
+    color: aliceblue; /* Cambia el color de fondo para mejorar la legibilidad */
+    background-color: transparent;
+}
+
+/* Estilos para los iconos dentro de los enlaces */
+nav .links a .icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
