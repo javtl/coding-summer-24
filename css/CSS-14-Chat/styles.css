@@ -1,0 +1,123 @@
+/* Estilos generales */
+
+/* Configuración de la fuente para todo el cuerpo del documento */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Encabezado de la página */
+.head {
+    background-color: #25D366;
+    color: white;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+/* Contenedor principal del chat */
+.chat-container {
+    width: 700px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    background-color: #075E54;
+    box-sizing: border-box;
+    gap: 10px;
+    padding: 30px;
+}
+
+/* Contenedor de las burbujas de chat */
+.chat-container .bubble-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilos para las burbujas de chat izquierdas */
+.chat-container .bubble-container.left {
+    width: 50%;
+    margin-right: auto;
+}
+
+/* Estilos para las burbujas de chat derechas */
+.chat-container .bubble-container.right {
+    width: 50%;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+/* Triángulo en la primera burbuja de chat izquierda */
+.chat-container .bubble-container.left .bubble:nth-child(1) .bubble-text > div::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-right: solid 5px #128C7E;
+    border-top: solid 5px #128C7E;
+    border-left: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    left: -9px;
+    top: 0;
+}
+
+/* Triángulo en la primera burbuja de chat derecha */
+.chat-container .bubble-container.right .bubble:nth-child(1) .bubble-text > div::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-left: solid 5px #128C7E;
+    border-top: solid 5px #128C7E;
+    border-right: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    right: -8px;
+    top: 0;
+}
+
+/* Estilo para la información de la burbuja */
+.bubble-info {
+    color: #34B7F1;
+}
+
+/* Estilos para el contenido del texto en las burbujas */
+.chat-container .bubble-container .bubble .bubble-text {
+    color: white;
+}
+
+/* Estilos para el fondo de las burbujas derechas */
+.chat-container .bubble-container.bubble-container.right .bubble .bubble-text > div {
+    position: relative;
+    background-color: #128C7E;
+}
+
+/* Estilos para el fondo de las burbujas izquierdas */
+.chat-container .bubble-container.left .bubble .bubble-text > div {
+    position: relative;
+    background-color: #128C7E;
+}
+
+/* Estilos generales para el contenido de las burbujas de chat */
+.chat-container .bubble-container .bubble .bubble-text > div {
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+/* Estilos para la información dentro de las burbujas de chat */
+.chat-container .bubble-container .bubble .bubble-text .bubble-info {
+    font-size: 12px;
+    padding: 5px 10px;
+    text-align: right;
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    box-sizing: border-box;
+}
