@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <link rel="icon" href="img/file-icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="upload-container">
+        <div class="title">SUBIR ARCHIVO</div>
+        <div class="description">
+            Sube los archivos a la Nube
+        </div>
+        <div class="drag-drop">
+            <div class="icon">
+                <img src="img/blue-upload-icon-96px.png" alt="Upload Icon">
+            </div>
+            <div>
+                Arrastra o suelta los archivos aquí<br> <!-- Agregado un espacio antes de <br> para mayor claridad -->
+            </div>
+
+            <button class="btn">Browse Files</button>
+        </div>
+
+        <div class="title-section">ARCHIVOS SUBIDOS</div>
+        <div class="uploaded-files">
+            <!-- Cada elemento de archivo subido debería estar dentro de un contenedor <div> -->
+            <div class="files">
+                <div class="icon"><img src="img/word-icon-48px.png" alt="Word Icon"></div>
+                <div class="title">
+                    <div class="name">Documento.pdf</div>
+                    <div class="progress">
+                        <div class="progress-upload"></div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button><img src="img/black-close-windows-icon.png" alt="Close Icon"></button>
+                </div>
+            </div>
+
+            <div class="files">
+                <div class="icon"><img src="img/word-icon-48px.png" alt="Word Icon"></div>
+                <div class="title">
+                    <div class="name">Documento.pdf</div>
+                    <div class="size">47 kb</div>
+                </div>
+                <div class="actions">
+                    <button><img src="img/black-close-windows-icon.png" alt="Close Icon"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
