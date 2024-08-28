@@ -1,0 +1,104 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0c6969;
+    margin: 0; /* Elimina el margen predeterminado del body */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100vh; /* Aprovecha toda la altura de la ventana */
+}
+
+/* Estilos del contenedor principal */
+.container {
+    max-width: 100%; /* Haz que el contenedor sea responsive */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenedor */
+}
+
+/* Estilos del contenedor del slider */
+.slider-container {
+    width: 100%; /* Utiliza todo el ancho disponible */
+    max-width: 700px; /* Establece un ancho máximo para el slider */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    /* Resto del código CSS existente */
+}
+
+/* Estilos del viewport del slider */
+.slider-container .slider-viewport {
+    width: 700px;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Estilos de las imágenes de las diapositivas */
+.slider-container .slider-viewport .slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilos de cada diapositiva */
+.slider-container .slide {
+    min-width: 700px;
+    height: 400px;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos de la primera diapositiva */
+.slider-container .slide:nth-child(1) {
+    background-color: #8C441B;
+}
+
+/* Estilos de la segunda diapositiva */
+.slider-container .slide:nth-child(2) {
+    background-color: #FF9C63;
+}
+
+/* Estilos de la tercera diapositiva */
+.slider-container .slide:nth-child(3) {
+    background-color: #DA793F;
+}
+
+/* Estilos de la cuarta diapositiva */
+.slider-container .slide:nth-child(4) {
+    background-color: #0D8C8C;
+}
+
+/* Estilos de la quinta diapositiva */
+.slider-container .slide:nth-child(5) {
+    background-color: #3FD9D8;
+}
+
+/* Estilos de los enlaces de navegación del slider */
+.slider-container .links {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Estilos de cada enlace de navegación del slider */
+.slider-container .links a {
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e2e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos de los enlaces de navegación del slider al pasar el cursor */
+.slider-container .links a:hover {
+    background-color: #0D8C8C;
+}
