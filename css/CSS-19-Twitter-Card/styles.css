@@ -1,0 +1,170 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
+    padding: 0; /* Espaciado interno */
+    margin: 0; /* Margen exterior */
+    background-color: #1DA1F2; /* Color de fondo */
+  }
+  
+  /* Estilos para el contenedor del perfil de usuario */
+  .profile-container {
+    margin: 100px auto; /* Margen superior e inferior (auto para centrarlo horizontalmente) */
+    width: 70px; /* Ancho del contenedor */
+  }
+  
+  /* Estilos para la imagen de perfil */
+  .profile-container .profile img {
+    border-radius: 50%; /* Forma redondeada para la imagen */
+    width: 70px; /* Ancho de la imagen */
+  }
+  
+  /* Estilos para la información del perfil (oculta por defecto) */
+  .profile-container .profile .info {
+    display: none; /* Oculta la información */
+    position: absolute; /* Posición absoluta */
+    width: 340px; /* Ancho de la información */
+    min-height: 300px; /* Altura mínima */
+    max-height: 346px; /* Altura máxima */
+    background-color: #222; /* Color de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* El espaciado interno no afecta al tamaño total */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2); /* Sombra */
+    flex-direction: column; /* Dirección de los elementos internos */
+  }
+  
+  /* Muestra la información del perfil al pasar el mouse sobre el perfil */
+  .profile-container .profile:hover .info {
+    display: flex; /* Muestra la información y aplica una animación */
+    animation: show 0.3s ease;
+  }
+  
+  /* Estilos para los enlaces */
+  .profile-container .profile a {
+    color: white; /* Color del texto de enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilos para los enlaces al pasar el mouse sobre ellos */
+  .profile-container .profile a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+  }
+  
+  /* Estilos para el encabezado de la información del perfil */
+  .profile-container .profile .info .header {
+    display: flex; /* Distribuye los elementos en línea */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+  }
+  
+  /* Estilos para la foto de perfil en la información */
+  .profile-container .profile .info .photo {
+  }
+  
+  /* Estilos para la imagen de la foto de perfil en la información */
+  .profile-container .profile .info .photo img {
+  }
+  
+  /* Estilos para la sección de acción (botón "Follow") */
+  .profile-container .profile .action {
+  }
+  
+  /* Estilos para el botón de acción */
+  .profile-container .profile .action button {
+    min-width: 100px; /* Ancho mínimo del botón */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-weight: bold; /* Grosor de la fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambio de cursor al pasar el mouse */
+  }
+  
+  /* Estilos para el botón de acción al pasar el mouse sobre él */
+  .profile-container .profile .action button:hover {
+    background-color: #eee; /* Cambio de color de fondo al pasar el mouse */
+  }
+  
+  /* Estilos para la información del usuario */
+  .profile-container .profile .user-info {
+    padding: 10px 0; /* Espaciado en la parte superior e inferior */
+  }
+  
+  /* Estilos para el nombre del usuario */
+  .profile-container .profile .user-info .name {
+    font-weight: bold; /* Grosor de la fuente */
+  }
+  
+  /* Estilos para el nombre de usuario */
+  .profile-container .profile .user-info .username {
+    color: #aaa; /* Color del texto */
+  }
+  
+  /* Estilos para la descripción del usuario */
+  .profile-container .profile .description {
+    padding: 10px 0 20px 0; /* Espaciado en la parte superior, derecha, inferior e izquierda */
+    flex: 1; /* Ocupa el espacio disponible */
+  }
+  
+  /* Estilos para los enlaces dentro de la descripción */
+  .profile-container .profile .description a {
+    color: rgb(0, 140, 255); /* Color del texto de enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* Estilos para el contenedor de seguidores y seguidos */
+  .profile-container .profile .followers-container {
+    display: flex; /* Distribuye los elementos en línea */
+    gap: 10px; /* Espacio entre los elementos */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+  }
+  
+  /* Estilos para los enlaces dentro del contenedor de seguidores */
+  .profile-container .profile .followers-container a {
+    color: #aaa; /* Color del texto de enlace */
+  }
+  
+  /* Estilos para el número de seguidores y seguidos */
+  .profile-container .profile .followers-container .number {
+    font-weight: bold; /* Grosor de la fuente */
+    color: white; /* Color del texto */
+  }
+  
+  /* Estilos para la sección "other" */
+  .profile-container .profile .other {
+    padding: 10px 0; /* Espaciado en la parte superior e inferior */
+  }
+  
+  /* Estilos para los enlaces dentro de la sección "other" */
+  .profile-container .profile .other a {
+    color: #999; /* Color del texto de enlace */
+    display: flex; /* Distribuye los elementos en línea */
+  }
+  
+  /* Estilos para las fotos en la sección "other" */
+  .profile-container .profile .other a .photos {
+    display: flex; /* Distribuye los elementos en línea */
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+    justify-content: start; /* Alineación al inicio */
+    margin-right: 30px; /* Margen derecho */
+  }
+  
+  /* Estilos para las imágenes en la sección "other" */
+  .profile-container .profile .other a .photos img {
+    margin-right: -20px; /* Ajuste de margen derecho negativo */
+    border: solid 4px #222; /* Borde sólido con color */
+    width: 32px; /* Ancho de la imagen */
+    height: 32px; /* Altura de la imagen */
+  }
+  
+  /* Animación para mostrar la información del perfil */
+  @keyframes show {
+    from {
+      opacity: 0; /* Opacidad inicial (invisible) */
+    }
+    to {
+      opacity: 1; /* Opacidad final (visible) */
+    }
+  }
+  
