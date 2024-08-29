@@ -1,0 +1,178 @@
+/* Estilo de fuente principal para el cuerpo del documento */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Estilo para iconos de Material Icons */
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px; /* Tamaño preferido de los iconos */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Mejora la calidad de visualización en navegadores WebKit */
+    -webkit-font-smoothing: antialiased;
+    /* Mejora la calidad de visualización en Safari y Chrome */
+    text-rendering: optimizeLegibility;
+  
+    /* Mejora la calidad de visualización en Firefox */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Habilita ligaduras en Internet Explorer */
+    font-feature-settings: "liga";
+  }
+  
+  /* Estilo para el contenedor de pronóstico del tiempo */
+  .weather-container {
+    color: white;
+    font-size: 18px;
+    width: 450px;
+    margin: 100px auto;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50px;
+  }
+  
+  /* Estilo para la sección actual del pronóstico del tiempo */
+  .weather-container .current {
+    background: rgb(30, 107, 221);
+    background: linear-gradient(
+      0deg,
+      rgba(30, 107, 221, 1) 0%,
+      rgba(3, 116, 255, 1) 42%,
+      rgba(3, 191, 255, 1) 100%
+    );
+    border-radius: 40px;
+    padding: 40px;
+  }
+  
+  .weather-container .current .city {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-container .current .day {
+    text-align: center;
+  }
+  
+  .weather-container .current .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .weather-container .current .row .icon img {
+    /* Estilo para la imagen del icono */
+  }
+  
+  .weather-container .current .row .info {
+    /* Estilo para la información de la fila */
+  }
+  
+  .weather-container .current .row .info .temperature {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .weather-container .current .row .info .temperature .temperature-now {
+    font-size: 80px;
+    margin: 0;
+  }
+  
+  .weather-container .current .row .info .temperature .temperature-low {
+    margin-left: -15px;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .weather-container .current .row .info .status {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .weather-container .current .more {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .weather-container .current .more .item {
+    /* Estilo para cada elemento adicional en la sección actual */
+  }
+  
+  .weather-container .current .more .item .icon span {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .weather-container .current .more .item .text {
+    font-weight: bold;
+  }
+  
+  .weather-container .current .more .item .text .value {
+    /* Estilo para el valor del elemento adicional */
+  }
+  
+  .weather-container .current .more .item .text .type {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Estilo para la lista de pronóstico de varios días */
+  .weather-container .list {
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .weather-container .list .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .weather-container .list .day .name {
+    width: 123.3px;
+    font-weight: bold;
+  }
+  
+  .weather-container .list .day .weather {
+    width: 123px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .weather-container .list .day .weather .icon {
+    /* Estilo para el icono del clima en la lista de días */
+  }
+  
+  .weather-container .list .day .weather .status {
+    /* Estilo para el estado del clima en la lista de días */
+  }
+  
+  .weather-container .list .day .temperature {
+    width: 123px;
+    text-align: right;
+  }
+  
+  .weather-container .list .day .temperature .temperature-high {
+    /* Estilo para la temperatura máxima en la lista de días */
+  }
+  
+  .weather-container .list .day .temperature .temperature-low {
+    color: rgba(255, 255, 255, 0.7);
+    /* Estilo para la temperatura mínima en la lista de días */
+  }
+  
