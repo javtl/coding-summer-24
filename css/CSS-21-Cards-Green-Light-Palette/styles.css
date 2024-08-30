@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+
+.cards{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+}
+
+.card-1{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color:#5CBD5B ;
+    color:  white;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold;
+}
+.card-2{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color:#3D7D3C;
+    color:  white;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold;
+    
+}
+.card-3{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color:#7BFC79;
+    color:  white;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold;
+}
+.card-4{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color:#1E3D1D ;
+    color:  white;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold;
+}
+
+.card-5{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color:#6FE36D ;
+    color:  white;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold;
+}
