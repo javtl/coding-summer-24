@@ -1,0 +1,339 @@
+/* Importación de la fuente "Poppins" desde Google Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Poppins);
+
+/* Estilos globales */
+* {
+    font-family: "Poppins", sans-serif; /* Fuente predeterminada para todo el contenido */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+    background: #f8f8f8; /* Color de fondo para el cuerpo */
+}
+
+/* Variables CSS personalizadas */
+:root {
+    --gradient: linear-gradient(to right, #e2336b, #fcac46); /* Gradiente personalizado */
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: #f8f8f8;
+    padding: 20px;
+    z-index: 2;
+}
+
+/* Estilos del contenido principal */
+.main-home {
+    position: absolute;
+    width: calc(100% - 300px);
+    min-height: 100vh;
+    top: 0;
+    left: 300px;
+    background: #fff;
+    border-radius: 1rem 0 0 1rem;
+    z-index: 1000;
+}
+
+/* Estilos para el logotipo */
+.logo img {
+    width: 140px;
+}
+
+/* Estilos para la sección de perfil */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+}
+
+/* Estilos para la imagen de perfil */
+.profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #e2336b;
+}
+
+/* Estilos para la imagen dentro de la imagen de perfil */
+.profile-img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+/* Estilos para el nombre de usuario */
+.name {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0.4rem;
+}
+
+.name h1 {
+    font-size: 1.5rem;
+}
+
+.name img {
+    margin-left: 4px;
+    width: 20px;
+    object-fit: contain;
+}
+
+/* Estilos para el texto descriptivo */
+.profile-img span {
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+
+/* Estilos para la sección "Acerca de" */
+.about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Estilos para las cajas de información */
+.box {
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box span {
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+
+/* Estilos para los íconos en el menú */
+.menu a .icon img {
+    width: 24px; /* Ancho deseado en píxeles */
+    height: 24px; /* Altura deseada en píxeles */
+}
+
+/* Estilos para los elementos de menú */
+.menu a {
+    width: 100%;
+    font-size: 1rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+}
+
+/* Estilos para los elementos de menú al pasar el cursor */
+.menu a:hover,
+.menu .active {
+    color: #e2336b;
+}
+
+/* Estilos para los íconos en el menú */
+.menu .icon {
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+/* Estilos para el indicador de selección en el menú */
+.menu a:hover::before,
+.menu .active::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 17px;
+    background: #e2336b;
+}
+
+/* Estilos adicionales para el contenido principal */
+.main-home {
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Estilos para la cabecera */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para la barra de búsqueda */
+.search {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    width: 200px;
+    height: 2.4rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* Estilos para la salida de búsqueda */
+.search output {
+    font-size: 20px;
+}
+
+/* Estilos para el contenido de la cabecera */
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para los íconos en la cabecera */
+.header-content i {
+    color: #000;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+/* Estilos para todas las imágenes dentro de la clase "header" */
+.header img {
+    width: 24px; /* Ancho deseado en píxeles */
+    height: 24px; /* Altura deseada en píxeles */
+}
+
+/* Estilos específicos para el botón de "Add Photo" */
+.header .btn img {
+    width: 24px; /* Ancho deseado en píxeles */
+    height: 24px; /* Altura deseada en píxeles */
+}
+
+/* Estilos para la sección de "Historias" */
+.stories-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+/* Estilos para el título de "Historias" */
+.stories-title h1 {
+    font-size: 1.8rem;
+}
+
+/* Estilos para el botón en la sección de "Historias" */
+.stories-title .btn {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.stories-title .btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Estilos para la sección de fotos de usuario */
+.user-photos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Estilos para la foto de usuario individual */
+.user-photo {
+    display: flex;
+    margin: 7px;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #e2336b;
+}
+
+/* Estilos para la imagen dentro de la foto de usuario */
+.user-photo img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+
+/* Estilos para las publicaciones de usuario */
+.post {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para las imágenes en las publicaciones de usuario */
+.post img {
+    width: 100%;
+    max-height: 400px; /* Ajusta el tamaño máximo según sea necesario */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los botones "Me gusta" y "Mensaje" */
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.like-button,
+.message-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.like-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: -500px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.message-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: -550px; /* Ajusta el margen derecho según sea necesario */
+}
+
+/* Estilos para la información del usuario en la publicación */
+.post-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-user img {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: 40px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: -550px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.post-user h4 {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-right: -490px; /* Ajusta el margen derecho según sea necesario */
+}
