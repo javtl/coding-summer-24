@@ -1,0 +1,87 @@
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente de texto */
+    background-color: #3D7D3C; /* Color de fondo del cuerpo */
+  }
+
+
+  .app{
+   
+    margin-top: 10vh; /* Opcional: establece la altura del contenedor como el 100% de la ventana gráfica */
+  }
+  /* Estilos para el contenedor principal de la aplicación */
+  #app {
+
+    background-color: white; /* Color de fondo */
+    width: 500px; /* Ancho fijo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    border-radius: 10px;
+    border: solid 1px #ccc; /* Borde con color gris claro */
+    padding: 20px; /* Espaciado interior */
+  }
+  
+  /* Estilos para la sección de tiempo */
+  #time {
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px 0; /* Espaciado superior e inferior */
+  }
+  
+  /* Estilos para el valor de tiempo */
+  #time #value {
+    font-size: 48px; /* Tamaño de fuente grande */
+    font-weight: bolder; /* Texto en negrita */
+  }
+  
+  /* Estilos para el formulario de entrada de tareas */
+  .form {
+    display: flex; /* Mostrar elementos en fila */
+    justify-content: center; /* Centrar elementos horizontalmente */
+  }
+  
+  /* Estilos para el campo de entrada de texto */
+  input[type="text"] {
+    padding: 10px; /* Espaciado interior */
+    border: solid 1px #ccc; /* Borde con color gris claro */
+    width: 300px; /* Ancho fijo */
+  }
+  
+  /* Estilos para botones y botón de enviar */
+  button,
+  input[type="submit"] {
+    border: none; /* Sin borde */
+    background-color: #003366; /* Color de fondo azul oscuro */
+    color: white; /* Color de texto blanco */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  /* Estilos para la lista de tareas */
+  #tasks {
+    margin-left: 40px;
+    display: flex; /* Mostrar elementos en columna */
+    flex-direction: column; /* Dirección de la columna */
+    gap: 10px; /* Espaciado entre elementos */
+    margin-top: 10px; /* Espaciado superior */
+  }
+  
+  /* Estilos para cada tarea individual */
+  .task {
+    display: flex; /* Mostrar elementos en fila */
+    gap: 10px; /* Espaciado entre elementos */
+    align-items: center; /* Alinea elementos verticalmente al centro */
+  }
+  
+  /* Estilos para el estado de tarea completada */
+  .task .completed {
+    display: flex; /* Mostrar elementos en fila */
+    align-items: center; /* Alinea elementos verticalmente al centro */
+    gap: 10px; /* Espaciado entre elementos */
+  }
+  
+  /* Estilos para el estado "Hecho" */
+  .done {
+    display: inline-block; /* Mostrar como bloque en línea */
+    padding: 5px; /* Espaciado interior */
+    background-color: #ccc; /* Color de fondo gris claro */
+  }
+  

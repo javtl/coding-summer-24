@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Definición del tipo de documento y especificación del idioma -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página en la pestaña del navegador -->
+    <title>Pomodoro</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Icono de la página en la pestaña del navegador -->
+    <link rel="icon" href="img/icons8-technique-64.png">
+  </head>
+  <body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="app">
+    <div class="app" id="app">
+      <!-- Contenedor para mostrar el tiempo y la tarea actual -->
+      <div id="time">
+        <!-- Valor del tiempo -->
+        <div id="value"></div>
+        <!-- Nombre de la tarea actual -->
+        <div id="taskName"></div>
+      </div>
+
+      <!-- Contenedor de las tareas -->
+      <div class="tasks-container">
+        <!-- Formulario para agregar nuevas tareas -->
+        <div class="form">
+          <form action="" id="form">
+            <!-- Campo de entrada de texto para la tarea -->
+            <input type="text" id="itTask" />
+            <!-- Botón para agregar una tarea -->
+            <input type="submit" id="bAdd" value="Agregar tarea" />
+          </form>
+        </div>
+        <!-- Lista de tareas -->
+        <div id="tasks">
+          <!-- Elemento de una tarea -->
+          <div class="task"></div>
+        </div>
+      </div>
+    </div>
+    </div>  
+
+    <!-- Inclusión del archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
