@@ -1,0 +1,63 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal */
+    background-color: black; /* Fondo negro */
+}
+
+/* Estilos para la tarjeta */
+.card {
+    width: 500px; /* Ancho de la tarjeta */
+    height: 300px; /* Altura de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 50px 20px 0 20px; /* Espaciado interior */
+    box-sizing: border-box; /* El contenido no afecta las dimensiones externas */
+
+    /* Fondo con gradiente radial */
+    background: radial-gradient(
+        circle,
+        rgb(223, 223, 223) 1%, /* Color de inicio del gradiente */
+        rgb(158, 158, 158) 100% /* Color de fin del gradiente */
+    );
+
+    margin: 100px auto; /* Margen superior e inferior automático, centrado horizontalmente */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); /* Sombra */
+}
+
+/* Estilos para los campos de entrada dentro de la tarjeta */
+.card input {
+    font-size: 28px; /* Tamaño de fuente */
+    padding: 10px; /* Espaciado interior */
+    border: solid 1px rgb(94, 94, 94); /* Borde sólido con color */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: transparent; /* Fondo transparente */
+    margin: 5px 0; /* Margen superior e inferior */
+    outline: none; /* Sin resaltado del borde al hacer clic */
+}
+
+/* Estilos para el texto "Card Number" antes del campo de entrada */
+.card #inputCard::before {
+    content: "Card Number"; /* Texto que se muestra antes del campo de entrada */
+    position: relative;
+    width: 100px; /* Ancho del texto antes del campo */
+    height: 100px; /* Altura del texto antes del campo */
+}
+
+/* Estilos para el texto "holder" */
+.holder {
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 28px; /* Tamaño de fuente */
+    padding-top: 50px; /* Espaciado superior */
+}
+
+/* Estilos para el campo de entrada con ID "inputDate" */
+.card #inputDate {
+    width: 80px; /* Ancho del campo de fecha */
+}
+
+/* Estilos para el campo de entrada con ID "inputCVV" */
+.card #inputCVV {
+    width: 50px; /* Ancho del campo de CVV */
+}
+
