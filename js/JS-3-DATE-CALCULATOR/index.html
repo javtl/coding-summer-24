@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Días para eventos</title>
+
+    <!-- Enlaces a archivos externos -->
+    <link rel="stylesheet" href="styles.css" /> <!-- Estilos CSS -->
+    <link rel="icon" href="img/icons8-today-96.png"> <!-- Icono de la página -->
+  </head>
+  <body>
+    <div id="app">
+      <!-- Contenedor principal de la aplicación -->
+      <div class="form">
+        <!-- Formulario para agregar eventos -->
+        <form>
+          <input type="text" id="eventName" /> <!-- Campo de entrada para el nombre del evento -->
+          <input type="date" id="eventDate" /> <!-- Campo de entrada para la fecha del evento -->
+          <input type="button" id="bAdd" value="Añadir evento" /> <!-- Botón para añadir eventos -->
+        </form>
+      </div>
+
+      <div id="tasksContainer"></div> <!-- Contenedor para mostrar eventos agregados -->
+    </div>
+
+    <!-- Enlace al archivo JavaScript que controla la funcionalidad -->
+    <script src="script.js"></script>
+  </body>
+</html>
