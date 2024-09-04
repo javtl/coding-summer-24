@@ -1,0 +1,34 @@
+/* Estilo del fondo para el cuerpo del documento */
+body {
+    background-color: rgb(45, 122, 45);
+  }
+  
+  /* Estilos para el contenedor de la calificación (rating) */
+  .rating {
+    /* Margen superior para centrar verticalmente el contenido */
+    margin-top: 100px;
+    /* Establecer un diseño de caja flexible para centrar los elementos internos */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilos para los elementos de calificación (estrellas) */
+  .item {
+    /* Color de fondo predeterminado para las estrellas */
+    background-color: rgb(198, 198, 198);
+    /* Usar una imagen SVG como máscara para dar forma a las estrellas */
+    -webkit-mask-image: url(star.svg);
+    mask-image: url(star.svg);
+    /* Tamaño de cada estrella */
+    width: 50px;
+    height: 50px;
+    /* Cambiar el cursor a una mano cuando se pasa sobre las estrellas */
+    cursor: pointer;
+  }
+  
+  /* Estilos para las estrellas llenas o seleccionadas */
+  .item-full {
+    /* Color de fondo para las estrellas llenas */
+    background-color: rgb(255, 237, 35);
+  }
+  
