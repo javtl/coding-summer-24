@@ -1,0 +1,98 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente principal */
+    text-align: center; /* Alineación del texto en el cuerpo */
+    background-color: #f0f0f0; /* Color de fondo */
+    margin: 0; /* Eliminar márgenes predeterminados del cuerpo */
+    padding: 0; /* Eliminar relleno predeterminado del cuerpo */
+}
+
+/* Estilos para el contenedor del teclado virtual */
+#keyboard-container {
+    display: flex; /* Usar el modelo de caja flexible para organizar los elementos */
+    flex-wrap: wrap; /* Permitir que los elementos del teclado se envuelvan cuando no caben en una línea */
+    width: 684px; /* Ancho fijo del contenedor */
+    gap: 5px; /* Espacio entre los elementos del teclado */
+    margin: 100px auto; /* Márgenes superior e inferior automáticos y centrado horizontal */
+    background-color: #ddd; /* Color de fondo del contenedor */
+    padding: 10px; /* Relleno interior del contenedor */
+    border-radius: 5px; /* Borde redondeado del contenedor */
+}
+
+/* Estilos para las capas de teclado */
+.layer {
+    display: flex; /* Usar el modelo de caja flexible para organizar los elementos en la capa */
+    gap: 5px; /* Espacio entre los elementos de la capa */
+    justify-content: center; /* Centrar horizontalmente los elementos en la capa */
+    width: 100%; /* Ancho completo de la capa */
+}
+
+/* Estilos para las teclas del teclado */
+.key {
+    background-color: #222; /* Color de fondo de las teclas */
+    color: white; /* Color del texto de las teclas */
+    border: none; /* Eliminar bordes de las teclas */
+    border-radius: 3px; /* Borde redondeado de las teclas */
+    display: flex; /* Usar el modelo de caja flexible para centrar el contenido */
+    align-items: center; /* Centrar verticalmente el contenido en las teclas */
+    justify-content: center; /* Centrar horizontalmente el contenido en las teclas */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse sobre las teclas */
+    font-size: 18px; /* Tamaño de fuente de las teclas */
+}
+
+/* Estilos para teclas normales */
+.key-normal {
+    width: 50px; /* Ancho de las teclas normales */
+    height: 70px; /* Altura de las teclas normales */
+}
+
+/* Estilos para teclas de mayúsculas */
+.key-mayus {
+    width: 120px; /* Ancho de las teclas de mayúsculas */
+    height: 70px; /* Altura de las teclas de mayúsculas */
+}
+
+/* Estilos para teclas de cambio (shift) */
+.key-shift {
+    width: 80px; /* Ancho de las teclas de cambio (shift) */
+    height: 70px; /* Altura de las teclas de cambio (shift) */
+}
+
+/* Estilos para la tecla de espacio */
+.key-space {
+    width: 400px; /* Ancho de la tecla de espacio */
+    height: 70px; /* Altura de la tecla de espacio */
+}
+
+/* Estilos para teclas vacías (sin contenido) */
+.key-empty {
+    width: 25px; /* Ancho de las teclas vacías */
+    height: 70px; /* Altura de las teclas vacías */
+    background-color: transparent; /* Color de fondo transparente */
+    color: white; /* Color del texto de las teclas vacías */
+    border-radius: 3px; /* Borde redondeado de las teclas vacías */
+    display: flex; /* Usar el modelo de caja flexible para centrar el contenido */
+    align-items: center; /* Centrar verticalmente el contenido en las teclas vacías */
+    justify-content: center; /* Centrar horizontalmente el contenido en las teclas vacías */
+}
+
+/* Estilos al pasar el mouse sobre las teclas */
+.key:hover {
+    background-color: #555; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+/* Estilos para la tecla activada (ejemplo: tecla presionada) */
+.activated {
+    outline: greenyellow solid 2px; /* Agregar un resaltado de color alrededor de la tecla activada */
+}
+
+/* Estilos para el campo de entrada de texto */
+.input {
+    width: 500px; /* Ancho del campo de entrada de texto */
+    padding: 20px; /* Relleno interior del campo */
+    font-size: 38px; /* Tamaño de fuente del campo */
+    margin: 20px auto; /* Márgenes superior e inferior automáticos y centrado horizontal */
+    display: block; /* Hacer que el campo sea un bloque para centrarlo */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px; /* Borde redondeado del campo */
+}
